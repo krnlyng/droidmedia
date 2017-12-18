@@ -399,11 +399,6 @@ public:
       format->setInt32("android._using-recorder", 1);
 #endif
 
-      if (!strcmp (mime, android::MEDIA_MIMETYPE_VIDEO_AVC)) {
-        format->setInt32("profile", OMX_VIDEO_AVCProfileBaseline);
-        int32_t level = android::ACodec::getAVCLevelFor(width, height, frames, bitrate);
-        format->setInt32("level", level);
-      }
       //TODO: time-scale
 
 #if ANDROID_MAJOR >= 6
