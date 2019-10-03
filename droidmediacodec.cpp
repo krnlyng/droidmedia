@@ -77,6 +77,7 @@ struct DroidMediaCodecMetaDataKey {
     {android::MEDIA_MIMETYPE_VIDEO_MPEG4, android::kKeyESDS, android::kTypeESDS},
     {android::MEDIA_MIMETYPE_AUDIO_AAC, android::kKeyESDS, android::kTypeESDS},
     {android::MEDIA_MIMETYPE_VIDEO_AVC, android::kKeyAVCC, android::kTypeAVCC},
+    {android::MEDIA_MIMETYPE_VIDEO_MPEG2, android::kKeyESDS, android::kTypeESDS},
     {NULL, 0, 0}
 };
 
